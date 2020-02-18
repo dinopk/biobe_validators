@@ -19,27 +19,27 @@ $ yarn add biobe-validators
 #### CPF
 
 ```js
-import { isCpf } from "biobe-validators";
+import { cpfValidation } from "biobe-validators";
 
 // No points or hyphens
-isCpf("29018170097"); // false
-isCpf("12312345600"); // false
+cpfValidation("29018170097"); // false
+cpfValidation("12312345600"); // false
 
 // With points or hyphens
-isCpf("123.123.456-00"); // false
+cpfValidation("123.123.456-00"); // false
 ```
 
 #### CNPJ
 
 ```js
-import { isCnpj, isCpf, isCep } from "biobe-validators";
+import { cnpjValidation, cpfValidation } from "biobe-validators";
 
 // No points or hyphens
-isCnpj("54334068000136"); // true
-isCnpj("00111222000100"); // false
+cnpjValidation("54334068000136"); // true
+cnpjValidation("00111222000100"); // false
 
 // With points or hyphens
-isCnpj("54.334.068/0001-36"); // true
+cnpjValidation("54.334.068/0001-36"); // true
 ```
 
 #### How to use with ES5
@@ -48,12 +48,12 @@ isCnpj("54.334.068/0001-36"); // true
 const validator = require("biobe-validators");
 
 // No points or hyphens
-validator.isCnpj("54334068000136"); // true
-validator.isCnpj("00111222000100"); // false
-validator.isCpf("29018170097"); // true
-validator.isCpf("12312345600"); // false
+validator.cnpjValidation("54334068000136"); // true
+validator.cnpjValidation("00111222000100"); // false
+validator.cpfValidation("29018170097"); // true
+validator.cpfValidation("12312345600"); // false
 
 // With points or hyphens
-validator.isCnpj("54.334.068/0001-36"); // true
-validator.isCpf("123.123.456-00"); // false
+validator.cnpjValidation("54.334.068/0001-36"); // true
+validator.cpfValidation("123.123.456-00"); // false
 ```
