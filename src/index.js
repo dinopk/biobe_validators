@@ -1,6 +1,6 @@
 var regex = /[\.\-\/]+/g;
 
-module.exports.isCnpj = function(cnpj) {
+module.exports.cnpjValidation = function(cnpj) {
   cnpj = cnpj.replace(regex, "");
 
   if (cnpj == "") return false;
@@ -47,7 +47,7 @@ module.exports.isCnpj = function(cnpj) {
   return true;
 };
 
-module.exports.isCpf = function(cpf) {
+module.exports.cpfValidation = function(cpf) {
   cpf = cpf.replace(regex, "");
 
   if (cpf == "") return false;
