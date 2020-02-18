@@ -1,0 +1,46 @@
+{
+  "name": "biobe-validators",
+  "version": "1.0.0",
+  "description": "validacao de cpf e cnpj do portal biobe",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dinopk/biobe_validators.git"
+  },
+  "jest": {
+    "testMatch": [
+      "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+      "<rootDir>/src/**/?(*.)(spec|test).{js,jsx,ts,tsx}"
+    ],
+    "transform": {
+      "^.+\\.(js|jsx|ts|tsx)$": "<rootDir>/node_modules/babel-jest"
+    }
+  },
+  "keywords": [
+    "cpf",
+    "cnpj",
+    "validacao",
+    "portal",
+    "biobe",
+    "validation",
+    "brasil",
+    "brazil"
+  ],
+  "author": "“Victor Marques <“marqueskazuya@gmail.com”>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dinopk/biobe_validators/issues"
+  },
+  "homepage": "https://github.com/dinopk/biobe_validators#readme",
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "babel-core": "^7.0.0-bridge.0",
+    "jest": "^23.6.0"
+  },
+  "bundleDependencies": false,
+  "deprecated": false
+}
