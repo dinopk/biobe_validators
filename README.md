@@ -32,7 +32,7 @@ cpfValidation("123.123.456-00"); // false
 #### CNPJ
 
 ```js
-import { cnpjValidation, cpfValidation } from "biobe-validators";
+import { cnpjValidation } from "biobe-validators";
 
 // No points or hyphens
 cnpjValidation("54334068000136"); // true
