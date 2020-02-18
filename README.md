@@ -32,7 +32,7 @@ isCpf("123.123.456-00"); // false
 #### CNPJ
 
 ```js
-import { isCnpj, isCpf, isCep } from "validator-brazil";
+import { isCnpj, isCpf, isCep } from "biobe-validators";
 
 // No points or hyphens
 isCnpj("54334068000136"); // true
@@ -45,7 +45,7 @@ isCnpj("54.334.068/0001-36"); // true
 #### How to use with ES5
 
 ```js
-const validator = require("validator-brazil");
+const validator = require("biobe-validators");
 
 // No points or hyphens
 validator.isCnpj("54334068000136"); // true
