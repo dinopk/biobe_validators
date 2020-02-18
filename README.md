@@ -1,4 +1,4 @@
-# biobe_validators
+# biobe-validators
 
 ## Getting started
 
