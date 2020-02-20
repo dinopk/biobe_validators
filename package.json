@@ -1,6 +1,6 @@
 {
   "name": "biobe-validators",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "validacao de cpf e cnpj do portal biobe",
   "main": "src/index.js",
   "scripts": {
